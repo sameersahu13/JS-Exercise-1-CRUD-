@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       JS EXERCISE 1
+    </title>
+
+    <style>
+        header{
+        text-align: center;
+    }
+    table, th, td {
+  border: 1px solid black;
+  width: 600px;
+}
+
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+   <header><strong> JS Exercise 1 </strong></header><br>
+<body>
+    
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Name</label><label class="validation-error hide" id="NameValidationError"></label>
+                        <input type="text" name="Name" id="Name">
+                    </div><br>
+                    <div>
+                        <label>DOB</label>
+                        <input type="date" name="DOB" id="DOB">
+                    </div>
+                    <div><br>
+                        <label>Gender</label>
+                        <input type="radio" name="gender" value="Male" id="Gender">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="Female" id="Gender">
+                        <label for="female">female</label>
+
+                    </div><br>
+
+
+
+                    <div>
+                        <label>Skills</label>
+                    
+
+                        <select id="Skills" >
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="JAVA">JAVA</option>
+                        </select><br>
+                         </div><br>
+
+
+                         <label>Hobbies:</label>
+
+                         <input id="Hobbies" value="Cricket" type="checkbox" name="Hobbies">
+                         <label> Cricket</label>
+                         <input id="Hobbies" value="Tennis" type="checkbox" name="Hobbies">
+                         <label> Tennis</label> <br><br>
+
+                    
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Add/Update">
+                    </div>
+                </form>
+           
+            <br><br>
+
+
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>DOB</th>
+                            <th>Gender</th>
+                            <th>Skills</th>
+                            <th>Hobbies</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
